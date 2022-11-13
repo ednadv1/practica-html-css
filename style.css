@@ -1,0 +1,375 @@
+* 
+mobile-- intento fallido
+/* 
+revisar en los proximos dias mas tranquila
+*/
+
+body {
+    margin: 0 0 0 0;
+    background-color: rgb(16, 16, 207);
+    color:#365b96;
+    font-family: Arial, Helvetica, sans-serif,cursive ;
+    font-size: 18px;
+}
+
+main {
+    margin: auto 0.8em auto 0.8em;
+}
+
+footer {
+    background-color:#c49fc5;
+    height: 5em;
+    width:100%;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+/* 
+ NAV BAR
+*/
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 6px solid rgb(107, 107, 107);
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    background-color:#9f94b7;
+    padding: 1em 0.5em;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+}
+
+.logo-area span {
+    font-size: 1em;
+}
+
+.logo-area img {
+    height: 3em;
+}
+
+.dropdown-top-button {
+    width: 30vw;
+    padding: 1em 0 1em 0em;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.dropdown-top-button:hover{
+    background-color:#ffc0cb;
+    transition: 0.3s;
+   
+}
+
+.dropdown-top:hover .dropdown-top-content {
+    display: block;
+}
+
+.dropdown-top-content {
+    width: 30vw;
+    display: none;
+    position: absolute;
+    background-color:#fff1f3;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    border-radius: 0 0 4px 4px;
+}
+
+.dropdown-top-content > a {
+    background-color:#fff1f3;
+    border-radius: 4px;
+    margin: 0.5em;
+    padding: 0.5em 1.1em;
+    display: block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.dropdown-top-content > a:nth-child(1):hover {
+    background-color: rgb(235, 208, 246);
+    transition: 0.3s;
+
+}
+
+.dropdown-top-content > a:nth-child(2):hover {
+    background-color: rgb(235, 208, 246);
+    transition: 0.3s;
+
+}
+
+.dropdown-top-content > a:nth-child(3):hover {
+    background-color: rgb(235, 208, 246);
+    transition: 0.3s;
+}
+
+/* 
+ AREA
+*/
+
+
+.section {
+    margin-top: 5vh;
+}
+
+.intro {
+    background: url(./images/backgdround.jpg);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro h1 {    
+    
+    border-radius: 40px;
+    padding: 3vw 5vh;
+    font-size: 90vw;
+}
+
+.extra-info{
+    display: none;
+}
+
+/* 
+SKILLS
+*/
+
+
+.projects{
+    display: none;
+}
+
+.skill {
+    border: 1px solid rgb(128, 128, 128);
+    margin: 1em 0 1em 0;
+    border-radius: 8px;
+    height: 1em;
+}
+
+.skill-progress {
+    height: 1em;
+    border-radius: 8px;
+    background-color: #d0a5e9;
+}
+
+#skill-html {
+    animation-name: htmlProgressBar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes htmlProgressBar {
+    0% { width: 0; }
+    100% { width: 90%; }
+}
+
+
+#skill-css {
+    animation-name: cssProgressBar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cssProgressBar {
+    0% { width: 0; }
+    100% { width: 95%; }
+}
+
+#skill-javascript {
+    animation-name: jsProgressBar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jsProgressBar {
+    0% { width: 0; }
+    100% { width: 50%; }
+}
+
+#skill-python {
+    animation-name: pythonProgressBar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pythonProgressBar {
+    0% { width: 0; }
+    100% { width: 80%; }
+}
+
+/* 
+FORM
+*/
+
+form > p {
+    font-weight: 600;
+    margin-top: 2em;
+}
+
+form input:not([type="radio"]) {
+    border-radius: 10px;
+    border: 1px solid rgb(128, 128, 128);
+    padding: 0.5em;
+    margin: 1em auto 1em auto;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-container > span {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container > span > label {
+    display: block;
+}
+
+form input[type="radio"] {
+    width: 1em;
+    height: 1em;
+} 
+
+form > div {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+    margin: 1em auto;
+}
+
+form input[type="submit"] {
+    background-color:#9f94b7;
+    margin: 3em auto 5em auto;
+    font-size: 1.2em;
+    border: none;
+}
+
+form input[type="submit"]:hover{
+    background-color: #f54e9f;
+    transition: 0.3s;
+}
+
+form > #message {
+    width: 100%;
+    max-width: 100%;
+    min-height: 5em;
+    max-height: 15em;
+    margin: 1em auto 1em auto;
+    border-radius: 10px;
+    border: 1px solid rgb(128, 128, 128);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+form > label[for="message"]{
+    display: block;
+    margin-top: 2em;
+    font-weight: 600;
+}
+
+/* 
+FOOTER
+*/
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3em;
+}
+
+.social-media {
+    width: 3em;
+    fill: rgb(231, 231, 231);
+}
+
+/* 
+BIGGER SCREENS SETTINGS
+*/
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+
+    .extra-info{
+        display: block;
+    }
+
+    .dropdown-top-button {
+        width: 10vw;
+    }
+    
+    .dropdown-top-content {
+        width: 10vw;
+    }
+
+    .intro {
+        height: 40vh;
+    }
+    
+    .intro h1 {
+        padding: 1rem 2rem;
+        font-size: 3rem;
+    }
+
+
+
+
+
+    .skill {
+        width: 30em;
+        margin: 1em 0 1em 0;
+        border-radius: 8px;
+        height: 1em;
+    }
+    
+    .skill-progress {
+        background-color:#c152ce;
+    }
+
+    form input:not([type="radio"]) {
+        width: 30em;
+        margin-left: 0;
+        display: inline;
+    }
+
+    form > #message {
+        margin-left: 0;
+        resize: none;
+        height: 10em;
+    }
+
+    form input[type="submit"] {
+        width: 5em;
+        margin-left: 0;
+    }
+
+    .logo-area img {
+        height: 3.5em;
+    }
+
+}
